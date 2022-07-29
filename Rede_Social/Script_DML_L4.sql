@@ -33,7 +33,7 @@ SELECT * FROM tb_postagens
 WHERE tb_postagens.titulo IN ('São Paulo');
 
 SELECT * FROM tb_grupos
-WHERE Id IS NULL;
+WHERE grupo LIKE '%V%';
 
 
 SELECT * FROM tb_usuarios AS u 
@@ -46,6 +46,6 @@ FULL JOIN tb_inscritos AS i
 WHERE u.nome LIKE '%A%';
 
 
-SELECT COUNT(usuario) AS 'Quantidado Produtos' FROM tb_usuarios;
-SELECT AVG(id) AS 'Média Valores' FROM tb_postagens;
-SELECT SUM(id) AS 'Total Valores' FROM tb_postagens;
+SELECT COUNT(usuario) AS 'Quantidade Usuarios' FROM tb_usuarios;
+SELECT AVG(id) AS 'Média Postagens' FROM tb_postagens;
+SELECT SUM(id) AS 'Total Postagens' FROM tb_postagens;
